@@ -1,0 +1,167 @@
+@media screen and (max-width:768px){
+    
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.navigation{
+    width: 100%;
+    height: 8vh;
+    position: relative;
+    background-color: #181617;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar a{
+    display: none;
+}
+.navbar .fa-bars{
+    color: aliceblue;
+    display: block;
+}
+
+.banner{
+    position: absolute;
+    margin-top: 0%;
+}
+.banner h1{
+    color: #fff;
+    font-size: 3rem;
+    margin-left: 5%;
+    font-family: var(--ubuntu);
+}
+.banner p{
+    padding: 1rem 1rem;
+    color: #A8A8A8;
+    width: 100%;
+    font-family: var(--roboto);
+    font-size: 1rem;
+    border-bottom: 0;
+    margin-bottom: 2rem;
+    margin: auto;
+}
+.header .social__media {
+    margin-left: 10%;
+}
+.header .social__media i{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+
+}
+.fa-down-long{
+    color: black;
+    margin-top: 70%;
+    margin-left: 45%;
+    background-color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: 100%;
+}
+.about__content{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+}
+.about__item img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+.about__item .title h2{
+    text-align: center;
+}
+.about__item .title p{
+    width: 100%;
+}
+.Contact__Details{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.Contact__Details .title{
+    width: 100%;
+}
+.Contact__Details .title p{
+    width: 100%;
+}
+.Contact__Details button{
+   margin-left: 30%;
+}
+.resume__content{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3rem;
+    border-bottom: 0.5px solid rgb(138, 135, 135);
+    margin-bottom: 1rem;
+}
+.work__content{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3rem;
+}
+.earth__content{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3rem;
+}
+.earth__item h2{
+    color: #fff;
+    margin-bottom: 1rem;
+
+}
+.earth__item p{
+    color:#A8A8A8;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.quote__content{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3rem;
+}
+.quote__item p{
+    color: #fff;
+    width: 100%;
+    font-family: var(--lato);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+.contact .title{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3rem;
+}
+.contact__content{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+.contact__item1{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 3rem;
+}
+.contact__item p{
+    color: #A8A8A8;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.footer__media {
+    margin-left: 0%;
+}
+.footer__media i{
+    margin-left: 10px;
+ margin-right: 10px;
+ font-size: 1.5rem;
+ color: #fff;
+}
+}
