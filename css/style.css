@@ -38,6 +38,11 @@ img{
 }
 /* start web site  */
 
+.add__navigation{
+ display: none;
+}
+
+
 .navigation{
     width: 100%;
     height: 8vh;
@@ -66,7 +71,7 @@ img{
     font-weight: 900;
     letter-spacing: 2px;
 }
-.navbar .fa-bars{
+ .header .fa-bars{
     color: aliceblue;
     display: none;
 }
@@ -133,7 +138,7 @@ img{
 
 .about{
     width: 100%;
-    padding: 4.8rem;
+    padding: 4.8rem 0;
     background-color: #2B2B2B;
 }
 .about__content{
@@ -181,7 +186,7 @@ img{
 
 .resume{
     width: 100%;
-    padding: 4.8rem;
+    padding: 4.8rem 0;
     background-color: #fff;
 }
 .resume__content{
@@ -213,7 +218,7 @@ img{
 /* works  */
 .work{
     width: 100%;
-    padding: 4.8rem;
+    padding: 4.8rem 0;
     background-color: whitesmoke;
 }
 .work .title {
@@ -265,7 +270,7 @@ img{
 
 .earth{
     width: 100%;
-    padding: 4.8rem ;
+    padding: 4.8rem 0;
     background-color: #181617;
 
 }
@@ -291,7 +296,7 @@ img{
 }
 .quote{
     width: 100%;
-    padding: 4.8rem;
+    padding: 4.8rem 0;
     background-image: url(/img/testimonials-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -318,7 +323,7 @@ img{
 /* contact  */
 .contact {
     width: 100%;
-    padding: 4.8rem;
+    padding: 4.8rem 0;
     background-color: #2B2B2B;
 }
 .contact .title{
@@ -384,8 +389,6 @@ img{
 .contact__item1 button:hover{
     background-color: #fff;
     color: #181617;
-    font-family: var(--karlo);
-    font-weight: 900;
 }
 .contact .fa-up-long{
     color: #fff;
@@ -400,14 +403,14 @@ img{
 /* footer  */
 .footer{
     width: 100%;
-    padding: 4.8rem;
+    padding: 4.8rem 0;
     background-color: #181617;
 }
 .footer__media {
     margin-left: 28%;
 }
 .footer__media i{
-       margin-left: 20px;
+    margin-left: 20px;
     margin-right: 20px;
     font-size: 2rem;
     color: #fff;
@@ -419,4 +422,11 @@ img{
 }
 .footer p a{
     color: #A8A8A8;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
 }

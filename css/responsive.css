@@ -2,32 +2,68 @@
     
 
 .container{
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
     overflow: hidden;
 }
-.navigation{
-    width: 100%;
-    height: 8vh;
-    position: relative;
-    background-color: #181617;
+
+
+.add__navigation{
+    width: 30%;
+    padding: 1rem 0;
+    position: fixed;
+    background-color:dimgray;
+    right: 2%;
+    top: 10%;
+    border-radius: 10px;
     z-index: 1;
+
+}
+.add__navbar{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.add__navbar a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.add__navbar a:hover, a:focus{
+    color: rgb(226, 255, 3);
+}
+.add__navigation .close__bars{
+    font-size: 4rem;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+
+}
+
+.navigation{
+  display: none;
+    
 }
 .navbar{
-    display: flex;
-    justify-content: flex-end;
+display: none;
 }
-.navbar a{
-    display: none;
+.active{
+    color: rgb(134, 134, 5);
 }
-.navbar .fa-bars{
+ .header .fa-bars{
     color: aliceblue;
     display: block;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    font-size: 2rem;
+
 }
 
 .banner{
     position: absolute;
-    margin-top: 0%;
+    margin-top: 40%;
 }
 .banner h1{
     color: #fff;
@@ -62,6 +98,7 @@
     background-color: #fff;
     padding: 0.8rem 1rem;
     border-radius: 100%;
+    display: none;
 }
 .about__content{
     display: grid;
@@ -155,13 +192,29 @@
     width: 100%;
     margin-bottom: 1rem;
 }
+.contact__item1 button{
+    width: 40%;
+    height: 6vh;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+  }
 .footer__media {
-    margin-left: 0%;
+    margin-left: 15%;
 }
 .footer__media i{
-    margin-left: 10px;
- margin-right: 10px;
+    margin-left: 5px;
+ margin-right: 5px;
  font-size: 1.5rem;
  color: #fff;
 }
+
+.show{
+    display: block;
 }
+.hide{
+    display: none;
+}
+}
+
+
