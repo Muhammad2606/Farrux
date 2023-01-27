@@ -52,12 +52,13 @@ display: none;
     color: rgb(134, 134, 5);
 }
  .header .fa-bars{
-    color: aliceblue;
+    color: orange;
     display: block;
     position: fixed;
     top: 20px;
     right: 40px;
     font-size: 2rem;
+    z-index: 999;
 
 }
 
@@ -214,6 +215,10 @@ display: none;
 }
 .hide{
     display: none;
+}
+.fade{
+    opacity: 0.1;
+    transition: 0.5s;
 }
 }
 

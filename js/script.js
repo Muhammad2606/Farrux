@@ -14,13 +14,31 @@ closeBars.addEventListener('click', ()=>{
     addNavigation.classList.add('hide');
 });
 addNavigation.addEventListener('click', (Event)=>{
-    if(Event == Event.target){
-        console.log(Event.target);
-        // addNavigation.classList.add('hide');
-        // addNavigation.classList.remove('show');
+    
+    if(Event.target){
+        function barsShow(){
+            setTimeout(() => {
+                addNavigation.classList.add('hide');
+                addNavigation.classList.remove('show','fade'); 
+                clearTimeout(timirBars);
+            }, 1000);
+         
+                
+       
+        }
+        barsShow();
+       
+     
+        
+        
+     
 
     }
 });
+
+
+
+      
 
 
 });
