@@ -48,47 +48,208 @@ addNavigation.addEventListener('click', (Event)=>{
     const addWork7 = document.querySelector('.w7');
     const addWork8 = document.querySelector('.w8');
 
-    workClose = document.querySelector('.close__work');
+    workClose = document.querySelectorAll('.close__work');
 
     plus.addEventListener('click', ()=>{
         addWork.classList.add('show');
         addWork.classList.remove('hide');
-        document.body.style.overflow = 'hidden';
+  
     });
-    workClose.addEventListener('click', ()=>{
-        addWork.classList.add('hide');
-        addWork.classList.remove('show');
-        document.body.style.overflow = '';
+    workClose.forEach(item => {
+        item.addEventListener('click', ()=>{
+            addWork.classList.add('hide');
+            addWork.classList.remove('show');
+            
+        });
     });
+    
     addWork.addEventListener('click', (Event) =>{
         
         if(Event.target == addWork){
             addWork.classList.add('hide');
             addWork.classList.remove('show');
-            document.body.style.overflow = '';
+           
         }
     });
 
     // 2
 
-    plus.addEventListener('click', ()=>{
-        addWork.classList.add('show');
-        addWork.classList.remove('hide');
-        document.body.style.overflow = 'hidden';
+    plus1.addEventListener('click', ()=>{
+        addWork2.classList.add('show');
+        addWork2.classList.remove('hide');
+  
     });
-    workClose.addEventListener('click', ()=>{
-        addWork.classList.add('hide');
-        addWork.classList.remove('show');
-        document.body.style.overflow = '';
-    });
-    addWork.addEventListener('click', (Event) =>{
+    workClose.forEach(item => {
+        item.addEventListener('click', ()=>{
+            addWork2.classList.add('hide');
+            addWork2.classList.remove('show');
         
-        if(Event.target == addWork){
-            addWork.classList.add('hide');
-            addWork.classList.remove('show');
-            document.body.style.overflow = '';
+        });
+    });
+    addWork2.addEventListener('click', (Event) =>{
+        
+        if(Event.target == addWork2){
+            addWork2.classList.add('hide');
+            addWork2.classList.remove('show');
+         
         }
     });
 
+    // 3
+
+    plus2.addEventListener('click', ()=>{
+        addWork3.classList.add('show');
+        addWork3.classList.remove('hide');
+        
+    });
+    workClose.forEach(item => {
+        item.addEventListener('click', ()=>{
+            addWork3.classList.add('hide');
+            addWork3.classList.remove('show');
+            
+        });
+    });
+    addWork3.addEventListener('click', (Event) =>{
+        
+        if(Event.target == addWork3){
+            addWork3.classList.add('hide');
+            addWork3.classList.remove('show');
+           
+        }
+    });
+    // 4
+
+    plus3.addEventListener('click', ()=>{
+        addWork4.classList.add('show');
+        addWork4.classList.remove('hide');
+        
+    });
+    workClose.forEach(item => {
+        item.addEventListener('click', ()=>{
+            addWork4.classList.add('hide');
+            addWork4.classList.remove('show');
+          
+        });
+    });
+    addWork4.addEventListener('click', (Event) =>{
+        
+        if(Event.target == addWork4){
+            addWork4.classList.add('hide');
+            addWork4.classList.remove('show');
+          
+        }
+    });
+
+    plus4.addEventListener('click', ()=>{
+        addWork4.classList.add('show');
+        addWork4.classList.remove('hide');
+        
+    });
+    workClose.forEach(item => {
+        item.addEventListener('click', ()=>{
+            addWork4.classList.add('hide');
+            addWork4.classList.remove('show');
+            
+        });
+    });
+    
+    addWork4.addEventListener('click', (Event) =>{
+        
+        if(Event.target == addWork4){
+            addWork4.classList.add('hide');
+            addWork4.classList.remove('show');
+            
+        }
+    });
+
+    // 2
+
+    plus5.addEventListener('click', ()=>{
+        addWork6.classList.add('show');
+        addWork6.classList.remove('hide');
+        
+    });
+    workClose.forEach(item => {
+        item.addEventListener('click', ()=>{
+            addWork6.classList.add('hide');
+            addWork6.classList.remove('show');
+           
+        });
+    });
+    addWork6.addEventListener('click', (Event) =>{
+        
+        if(Event.target == addWork6){
+            addWork6.classList.add('hide');
+            addWork6.classList.remove('show');
+         
+        }
+    });
+
+    // 3
+
+    plus6.addEventListener('click', ()=>{
+        addWork7.classList.add('show');
+        addWork7.classList.remove('hide');
+        
+    });
+    workClose.forEach(item => {
+        item.addEventListener('click', ()=>{
+            addWork7.classList.add('hide');
+            addWork7.classList.remove('show');
+            
+        });
+    });
+    addWork7.addEventListener('click', (Event) =>{
+        
+        if(Event.target == addWork7){
+            addWork7.classList.add('hide');
+            addWork7.classList.remove('show');
+           
+        }
+    });
+    // 4
+
+    plus7.addEventListener('click', ()=>{
+        addWork8.classList.add('show');
+        addWork8.classList.remove('hide');
+        
+    });
+    workClose.forEach(item => {
+        item.addEventListener('click', ()=>{
+            addWork8.classList.add('hide');
+            addWork8.classList.remove('show');
+            
+        });
+    });
+    addWork8.addEventListener('click', (Event) =>{
+        
+        if(Event.target == addWork8){
+            addWork8.classList.add('hide');
+            addWork8.classList.remove('show');
+       
+        }
+    });
+
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+delay:3000,
+disableOnInteraction: false,
+},
+loop: true,
+
+
+pagination: {
+el: '.swiper-pagination',
+clickable:true,
+},
+
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+
+
+});
 
 });

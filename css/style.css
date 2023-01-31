@@ -48,7 +48,7 @@ img{
     height: 8vh;
     position: fixed;
     background-color: #181617;
-    z-index: 1;
+    z-index: 1111;
 }
 
 .navbar{
@@ -355,6 +355,20 @@ img{
     background-attachment: fixed;
 
 }
+
+.swiper {
+    width: 100%;
+    height: 40vh;
+  }
+  .swiper .swiper-pagination-bullet{
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    
+  }
+  .swiper .swiper-pagination-bullet-active{
+    background-color: blue;
+  }
 .quote__content{
     display: grid;
     grid-template-columns: 20% 80%;
