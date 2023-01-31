@@ -41,6 +41,7 @@
 
 }
 
+
 .navigation{
   display: none;
     
@@ -141,6 +142,15 @@ display: none;
     display: grid;
     grid-template-columns: 100%;
     gap: 3rem;
+}
+
+.add__work__item{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: #fff;
+    position: relative;
+
 }
 .earth__content{
     display: grid;
